@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: postgres
+    environment:
+      POSTGRES_USER: MTT
+      POSTGRES_PASSWORD: MTT
+      POSTGRES_DB: ToDo
+    ports:
+      - "5432:5432"
